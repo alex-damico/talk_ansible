@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  become: true
+  vars:
+    app_user: "damico"
+    http_host: "ansiable"
+    http_conf: "ansiable.conf"
+    http_port: "80"
+    disable_default: true
+  roles:
+    - apache2
